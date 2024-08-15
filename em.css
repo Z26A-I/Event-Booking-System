@@ -156,14 +156,32 @@ nav {
 
 /* Footer Styles */
 .footer {
-    background-color: slategrey;
-    color: #fff;
-    padding: 40px 0;
+    background-color:black(0,0,0,0.2); /* Semi-transparent background */
+    color:black;
+    padding: 20px 0;
     text-align: center;
     margin-top: auto; /* Push footer to the bottom */
-    padding: 20px 0;
     font-size: 0.9rem;
+    position: relative; /* Allow absolute positioning within the footer */
 }
+
+.footer__content {
+    display: flex;
+    justify-content: space-between; /* Space out contact and copyright sections */
+    align-items: center; /* Vertically center items */
+    max-width: 1200px; /* Same as your main container width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__contact {
+    text-align: left; /* Align text to the left */
+}
+
+.footer__copyright {
+    text-align: right; /* Align text to the right */
+}
+
 
 
 
